@@ -367,6 +367,7 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .git {
     width: 80%;
 }
+
 .stat-title {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -485,11 +486,12 @@ section {
     transition: all 0.4s ease-in-out;
 }
 
-.portfolios .portfolio-item .hover-items h3 {
-    font-size: 1.5rem;
+.portfolios .portfolio-item .hover-items h4 {
+    font-size: 1.3rem;
     color: var(--color-white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
+
 
 .portfolios .portfolio-item .hover-items .icons {
     display: flex;
@@ -1076,4 +1078,15 @@ section {
     .main-title h2 .bg-text {
         font-size: 4rem;
     }
+}
+
+/* MINE */
+.tools {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+.tools span{
+    font-size: 18px;
 }
