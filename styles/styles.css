@@ -23,7 +23,7 @@
 
 .light-mode {
     --color-primary: #FFFFFF;
-    --color-secondary: #f4a300;
+    --color-secondary: #f46600;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -1115,7 +1115,7 @@ section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #1e90ff;
+    background-color: #f46600;
     position: absolute;
     animation: orbit 1s ease-in-out infinite;
 }
@@ -1136,7 +1136,7 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #1e90ff;
+    background-color: #f46600;
     position: relative;
     animation: spin 1s linear infinite;
 }
