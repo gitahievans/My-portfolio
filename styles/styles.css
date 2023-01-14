@@ -1094,3 +1094,58 @@ section {
 .tools span{
     font-size: 18px;
 }
+
+/* Define the container for the loader */
+.page-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define the electrons */
+.page-loader .electron {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    animation: orbit 1s ease-in-out infinite;
+}
+
+/* Define the animation for the electrons */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translate(0);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(60px);
+    }
+}
+
+/* Define the center of the loader */
+.page-loader .center {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e90ff;
+    position: relative;
+    animation: spin 1s linear infinite;
+}
+
+/* Define the animation for the center */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
