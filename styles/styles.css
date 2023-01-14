@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-primary: #191d2b;
+    --color-primary: #081238;
     --color-secondary: #8d04ac;
     --color-white: #FFFFFF;
     --color-black: #000;
@@ -23,7 +23,7 @@
 
 .light-mode {
     --color-primary: #FFFFFF;
-    --color-secondary: #f46a00;
+    --color-secondary: #f4a300;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -492,7 +492,7 @@ section {
     margin-bottom: 1.8rem;
 }
 
-.portfolios .portfolio-item .hover-items p{
+.portfolios .portfolio-item .hover-items p {
     padding: 3%;
     margin-bottom: 1rem;
 }
@@ -1091,10 +1091,12 @@ section {
     justify-content: space-evenly;
     margin-top: 10%;
 }
-.tools span{
+
+.tools span {
     font-size: 18px;
 }
 
+/* LOADER */
 /* Define the container for the loader */
 .page-loader {
     position: fixed;
@@ -1113,7 +1115,7 @@ section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #1e90ff;
     position: absolute;
     animation: orbit 1s ease-in-out infinite;
 }
