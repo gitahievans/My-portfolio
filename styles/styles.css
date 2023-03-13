@@ -81,7 +81,7 @@ section {
 
 @keyframes appear {
     0% {
-        transform: translateY(-100%) scaleY(0);
+        transform: translateX(-100%) scaleY(0);
     }
 
     100% {
@@ -167,18 +167,6 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-}
-
-.header-content .left-header .h-shape {
-    transition: all 0.4s ease-in-out;
-    width: 65%;
-    height: 100%;
-    background-color: var(--color-secondary);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 
 .header-content .left-header .image {
@@ -807,9 +795,6 @@ section {
         padding-bottom: 6rem;
     }
 
-    .left-header .h-shape {
-        display: none;
-    }
 
     .right-header {
         grid-row: 1;
@@ -1029,10 +1014,6 @@ section {
     .header-content {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
-    }
-
-    .left-header .h-shape {
-        display: none;
     }
 
     .left-header .image {
