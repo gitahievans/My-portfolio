@@ -28,11 +28,11 @@ window.addEventListener("load", () => {
     duration: 3,
     xPercent: -50,
     rotateX: 360,
-    delay: 3,
+    delay: 1,
   });
   gsap.from(lightButton, { duration: 3, xPercent: 50, ease: "bounce.out" });
   gsap.from(nameEl, {
-    duration: 5,
+    duration: 2,
     opacity: 0,
     y: -550,
     rotateX: 360,
@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     duration: 2,
     opacity: 0,
     stagger: 0.1,
-    delay: .5,
+    delay: .25,
   });
   gsap.from(downloadButton, {duration: 5, opacity: 0, x: -200});
 });

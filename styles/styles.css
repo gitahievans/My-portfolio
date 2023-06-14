@@ -158,47 +158,31 @@ section {
 
 /*Header-content*/
 .header-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
 }
 
-.header-content .left-header {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.header-content .left-header .image {
-    border-radius: var(--br-sm-2);
-    height: 90%;
-    width: 68%;
-    margin-left: 4rem;
-    background-color: var(--color-black);
-    transition: all 0.4s ease-in-out;
-}
-
-.header-content .left-header .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.4s ease-in-out;
-    filter: grayscale(100%);
-}
-
-.header-content .left-header .image img:hover {
-    filter: grayscale(0);
-}
-
-.header-content .right-header {
+.header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
+    gap: 32px;
 }
 
-.header-content .right-header .name {
+.header-content .name,
+.header-content .btn-con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header-content .name {
     font-size: 3rem;
+    color: #8d04ac;
+
 }
 
 .header-content .right-header .name span {
@@ -790,10 +774,6 @@ section {
         height: 50px;
     }
 
-    .header-content {
-        grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
-    }
 
 
     .right-header {
@@ -809,10 +789,6 @@ section {
         padding-top: 3rem;
     }
 
-    .header-content .left-header .image {
-        margin: 0 auto;
-        width: 90%;
-    }
 
     .controls {
         top: auto;
@@ -965,9 +941,6 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .header-content .right-header {
-        padding-right: 9rem;
-    }
 }
 
 @media screen and (max-width: 660px) {
@@ -1011,28 +984,6 @@ section {
         padding-right: 0rem;
     }
 
-    .header-content {
-        grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
-    }
-
-    .left-header .image {
-        width: 90% !important;
-        margin: 0 auto !important;
-    }
-
-    .right-header {
-        grid-row: 1;
-        padding-right: 0rem !important;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .right-header .name {
-        font-size: 2.5rem !important;
-        text-align: center;
-        padding-top: 3rem;
-    }
 }
 
 @media screen and (max-width: 700px) {
